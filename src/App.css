@@ -1,118 +1,167 @@
-body {
-  background-color: darkgray;
+html {
+    background: url(images/numbers.jpg);
+    background-size: cover;
+    height: 100%;
 }
+
 .App {
-  text-align: center;
-  display: flex;
-  justify-content:center;
- }
- .wrapperCounter {
-  height: 300px;
-  width: 300px;
-  border: 4px solid darkblue;
-  border-radius: 20px;
-  margin-top: 20%;
-   }
- .screen {
-  height: 140px;
-  width: 250px;
-  border: 4px solid darkblue;
-  border-radius: 20px;
-  margin: auto;
-  margin-top: 20px;
- }
- .btnsBlock {
-  height: 90px;
-  width: 250px;
-  border: 4px solid darkblue;
-  border-radius: 20px;
-  margin: auto;
-  margin-top: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
- }
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapperCounter {
+    height: 300px;
+    width: 300px;
+    border: 4px solid black;
+    border-radius: 20px;
+    margin-top: 15%;
+    box-shadow: 8px 8px 8px darkblue;
+}
+
+.screen {
+    height: 140px;
+    width: 250px;
+    border: 4px solid black;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 8px 8px 8px darkblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnsBlock {
+    height: 90px;
+    width: 250px;
+    border: 4px solid black;
+    border-radius: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 8px 8px 8px darkblue;
+}
+
 .inc {
-  margin-right: 10px;
+    margin-right: 10px;
 }
+
 .reset {
-  margin-left: 10px;
+    margin-left: 10px;
 }
+
 .number {
-  font-size: 35px;
-  font-weight: bold;
-  color: white;
-
+    font-size: 35px;
+    font-weight: bold;
+    color: yellow;
 }
+
 .numberNewColor {
-  font-size: 35px;
-  font-weight: bold;
-  color: red;
+    font-size: 35px;
+    font-weight: bold;
+    color: red;
+}
 
-}
 .wrapperSettingsCounter {
-  height: 300px;
-  width: 300px;
-  border: 4px solid darkblue;
-  border-radius: 20px;
-  margin-top: 20%;
-  margin-right:100px;
- }
- .settingsBtnsBlock {
-  height: 90px;
-  width: 250px;
-  border: 4px solid darkblue;
-  border-radius: 20px;
-  margin: auto;
-  margin-top: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
- }
- button {
-  height: 30px;
-  width: 90px;
-  font-size: 20px;
-  font-weight: bold;
-  background-color: pink;
-  border-radius: 20px;
+    height: 300px;
+    width: 300px;
+    border: 4px solid black;
+    border-radius: 20px;
+    margin-top: 15%;
+    margin-right: 100px;
+    box-shadow: 8px 8px 8px darkblue;
 }
+
+.settingsBtnsBlock {
+    height: 90px;
+    width: 250px;
+    border: 4px solid black;
+    border-radius: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 8px 8px 8px darkblue;
+}
+
+button {
+    height: 30px;
+    width: 90px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: pink;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px;
+}
+
 .settingsScreen {
-  height: 140px;
-  width: 250px;
-  border: 4px solid darkblue;
-  border-radius: 20px;
-  margin: auto;
-  margin-top: 20px;
+    height: 140px;
+    width: 250px;
+    border: 4px solid black;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 8px 8px 8px darkblue;
 }
-.maxValue{
-  width: 100px;
-  height: 20px;
-  margin-left: 10px;
-  margin-top: 10px;
+
+.maxValue {
+    width: 100px;
+    height: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
 }
+
 .maxValueString {
-  font-size: 20px;
-  font-weight: bold;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 8px 8px 8px darkblue;
 }
-.minValue{
-  width: 100px;
-  height: 20px;
-  margin-left: 10px;
-  margin-top: 30px;
+
+.minValue {
+    width: 100px;
+    height: 20px;
+    margin-left: 10px;
+    margin-top: 30px;
 }
+
 .minValueString {
-  font-size: 20px;
-  font-weight: bold;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 8px 8px 8px darkblue;
 }
+
 .error {
-  border-color: red;
-  background-color: rgba(247, 91, 91, 0.753);
+    border-color: red;
+    background-color: rgba(247, 91, 91, 0.753);
 }
+
 .errorText {
-  font-size: 35px;
-  font-weight: bold;
-  color: red;
+    font-size: 35px;
+    font-weight: bold;
+    color: red;
+}
+
+@media (max-width: 1024px) {
+    .App {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .wrapperSettingsCounter {
+        margin-right: 0;
+        margin-top: 10%;
+    }
+
+    .wrapperCounter {
+        margin-bottom: 10%;
+        margin-top: 10%;
+    }
+
+    html {
+        background: url(images/numbers.jpg);
+    }
+
 }
