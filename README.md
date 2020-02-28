@@ -1,3 +1,8 @@
+gh-pages: https://shpakovad.github.io/counter_Redux/
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
