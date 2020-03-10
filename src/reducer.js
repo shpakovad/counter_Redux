@@ -12,16 +12,17 @@ export const RESET_COUNTER = 'RESET_COUNTER';
 export const INCORRECT_VALUE_COUNTER = 'INCORRECT_VALUE_COUNTER';
 export const ENTERED_VALUE_COUNTER = 'ENTERED_VALUE_COUNTER';
 
+
 const initialState = {
     maxValue: 0,
     minValue: 0,
-    counter: "Enter value and press 'Set'",
-    isButtonInc: false,
+    counter: "Choose value and press 'Set'",
+    isButtonInc: true,
     numberNewColor: false,
     errorMax: false,
     errorMin: false,
     isButtonSet: true,
-    isButtonReset: false
+    isButtonReset: true
 };
 
 const reducer = (state = initialState, action) => {
